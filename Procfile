@@ -1,1 +1,1 @@
-web: gunicorn sim_arduino_server
+web: gunicorn yuntemp:app
