@@ -1,5 +1,8 @@
-# Config file for automatic testing at travis-ci.org
 language: python
 python:
-  - 3.6
+- 3.6
 install: pip install -r requirements.txt
+deploy:
+  provider: heroku
+  api_key:
+    secure: 1G652SkY5x/awUoZIFbDswcsd0af63DA2vtmCo9gAJUQltRRoiuibxOkgrZIgM1L4pQdhi42a541NBc42PaDNjXFpyw+R38UX/4jUo4QLqKjr3sDzQvw9eyIxZmb49tWSWAcP3b6233FgCQ6FZh0EflJXyi/huuePEpaCdHBeOYrTQLk3c0SY1mNqch3QQS59UZ+/NxOVPnc4eRe2tWq1Z9TtgzNsFZCdKM1cvN9GAp4LNyeBZzTT+gNSe3kiUgLTE+gip69Lmdq+yW87EU4o5DLtdq0cq5htSLw3EXCTtAOpjNk452XLE8wcu4TgVSA62qmF5AofD+cEk5MPMaQF2fieaVtnxfYhHCkgcjShd7M5Wbop9Vx12o0R+s1iRGiVzqO26Vh53AXuSEGdeu8z0ITBB9lIL9v36Im6O5jz+T1mPzPy/6BsdvmqIrlxhfOWOPJB3ETtw7AW4asqYUsRgdBCLqbRYJ2KF8Vj9ALktEsxCjj4hyqt0XcmCPwrkX0/Bnc7MVk6bbIn4U4+99fBFAL4i1TzbRjQ40oAsVnvy623RKaoOpf0+0Jd+ohmfAmN5ClgXbCcwaHdyRA+VNxsYCKoTZkQ0jbQ21FrBUviGNF4aw9bXmHNaZUQZDP2E0vAvk0ZNu2IeyxkW52AaaCQCteL/UNRXhfXyf7OmHUPoU=
