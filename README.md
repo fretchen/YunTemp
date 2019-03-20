@@ -9,4 +9,4 @@ You can set this address to test the control of your temperature control with th
 
 ## On the arduino
 
-If you would like to go beyond the simple simple simulation you can also install it on your Arduino Yun. Simply upload the file _YunPutAndGet.ino.with_bootloader.yun.hex_ onto the Yun. This tells the arduino how to handle the API calls and it implements a simple PID control. The typical hardware is:
+If you would like to go beyond the simple simple simulation you can also install it on your Arduino Yun. This in the end what this whole program was built for at [SynQS](http://www.kip.uni-heidelberg.de/synqs/). Simply upload the file _YunPutAndGet.ino.with_bootloader.yun.hex_ onto the Yun. This tells the arduino how to handle the API calls and it implements a simple PID control. The typical hardware is:
