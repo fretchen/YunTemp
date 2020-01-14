@@ -3,8 +3,16 @@ An extremely simple server that might be used for testing the arduino webserver 
 '''
 
 from flask import Flask, request, jsonify
+from flask_basicauth import BasicAuth
 import random
+
 app = Flask(__name__)
+
+app.config['BASIC_AUTH_USERNAME'] = 'john'
+app.config['BASIC_AUTH_PASSWORD'] = 'matrix'
+app.config['BASIC_AUTH_FORCE'] = True
+
+basic_auth = BasicAuth(app)
 
 setpoint = 0;
 gain = 0;
